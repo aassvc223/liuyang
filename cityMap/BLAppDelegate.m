@@ -7,7 +7,7 @@
 //
 
 #import "BLAppDelegate.h"
-
+#import "RootViewController.h"
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +16,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    UINavigationController *naiVC=[[UINavigationController alloc]initWithRootViewController:[[RootViewController alloc] init]];
+    self.window.rootViewController=naiVC;
     return YES;
 }
 

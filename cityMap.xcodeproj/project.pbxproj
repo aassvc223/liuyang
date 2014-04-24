@@ -19,6 +19,13 @@
 		848B042E190799DC00F4D74B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B0416190799DC00F4D74B /* UIKit.framework */; };
 		848B0436190799DC00F4D74B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848B0434190799DC00F4D74B /* InfoPlist.strings */; };
 		848B0438190799DC00F4D74B /* cityMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B0437190799DC00F4D74B /* cityMapTests.m */; };
+		848B0443190799EE00F4D74B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B0442190799EE00F4D74B /* RootViewController.m */; };
+		848B044519079ABD00F4D74B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B044419079ABD00F4D74B /* MapKit.framework */; };
+		848B044719079ACA00F4D74B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B044619079ACA00F4D74B /* CoreLocation.framework */; };
+		848B044919079EF300F4D74B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B044819079EF300F4D74B /* libxml2.dylib */; };
+		848B044C1907A18500F4D74B /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B044B1907A18500F4D74B /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		848B044F1907C29D00F4D74B /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B044E1907C29D00F4D74B /* Location.m */; };
+		848B04531907C62700F4D74B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B04521907C62700F4D74B /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,17 @@
 		848B0433190799DC00F4D74B /* cityMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cityMapTests-Info.plist"; sourceTree = "<group>"; };
 		848B0435190799DC00F4D74B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		848B0437190799DC00F4D74B /* cityMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cityMapTests.m; sourceTree = "<group>"; };
+		848B0441190799EE00F4D74B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		848B0442190799EE00F4D74B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		848B044419079ABD00F4D74B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		848B044619079ACA00F4D74B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		848B044819079EF300F4D74B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		848B044A1907A18500F4D74B /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		848B044B1907A18500F4D74B /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		848B044D1907C29D00F4D74B /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		848B044E1907C29D00F4D74B /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		848B04511907C62700F4D74B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		848B04521907C62700F4D74B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B044919079EF300F4D74B /* libxml2.dylib in Frameworks */,
+				848B044719079ACA00F4D74B /* CoreLocation.framework in Frameworks */,
+				848B044519079ABD00F4D74B /* MapKit.framework in Frameworks */,
 				848B0415190799DC00F4D74B /* CoreGraphics.framework in Frameworks */,
 				848B0417190799DC00F4D74B /* UIKit.framework in Frameworks */,
 				848B0413190799DC00F4D74B /* Foundation.framework in Frameworks */,
@@ -96,6 +117,9 @@
 		848B0411190799DC00F4D74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				848B044819079EF300F4D74B /* libxml2.dylib */,
+				848B044619079ACA00F4D74B /* CoreLocation.framework */,
+				848B044419079ABD00F4D74B /* MapKit.framework */,
 				848B0412190799DC00F4D74B /* Foundation.framework */,
 				848B0414190799DC00F4D74B /* CoreGraphics.framework */,
 				848B0416190799DC00F4D74B /* UIKit.framework */,
@@ -109,6 +133,13 @@
 			children = (
 				848B0421190799DC00F4D74B /* BLAppDelegate.h */,
 				848B0422190799DC00F4D74B /* BLAppDelegate.m */,
+				848B044A1907A18500F4D74B /* GDataXMLNode.h */,
+				848B044B1907A18500F4D74B /* GDataXMLNode.m */,
+				848B0441190799EE00F4D74B /* RootViewController.h */,
+				848B0442190799EE00F4D74B /* RootViewController.m */,
+				848B04511907C62700F4D74B /* MapViewController.h */,
+				848B04521907C62700F4D74B /* MapViewController.m */,
+				848B04501907C2A300F4D74B /* Model */,
 				848B0424190799DC00F4D74B /* Images.xcassets */,
 				848B0419190799DC00F4D74B /* Supporting Files */,
 			);
@@ -142,6 +173,15 @@
 				848B0434190799DC00F4D74B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		848B04501907C2A300F4D74B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				848B044D1907C29D00F4D74B /* Location.h */,
+				848B044E1907C29D00F4D74B /* Location.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				848B0423190799DC00F4D74B /* BLAppDelegate.m in Sources */,
+				848B044F1907C29D00F4D74B /* Location.m in Sources */,
+				848B044C1907A18500F4D74B /* GDataXMLNode.m in Sources */,
+				848B04531907C62700F4D74B /* MapViewController.m in Sources */,
 				848B041F190799DC00F4D74B /* main.m in Sources */,
+				848B0443190799EE00F4D74B /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +404,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cityMap/cityMap-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "cityMap/cityMap-Info.plist";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -373,8 +425,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cityMap/cityMap-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "cityMap/cityMap-Info.plist";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
